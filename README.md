@@ -88,3 +88,33 @@ Run multiple times tests (`RandomIterationOrderTest`):
     4: 4
     5: 5
     ```
+# remark
+**Note that order is stable within JVM instance**:
+* `set_jep269_multiple_one_jvm_instance`
+    ```
+    Set.of(1, 2, 3, 4, 5).forEach(System.out::println);
+    System.out.println("---");
+    Set.of(1, 2, 3, 4, 5).forEach(System.out::println);
+    System.out.println("---");
+    Set.of(1, 2, 3, 4, 5).forEach(System.out::println);
+    ```
+    produces
+    ```
+    2
+    1
+    5
+    4
+    3
+    ---
+    2
+    1
+    5
+    4
+    3
+    ---
+    2
+    1
+    5
+    4
+    3
+    ```
