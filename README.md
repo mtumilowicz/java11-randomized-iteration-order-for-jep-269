@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/java11-randomized-iteration-order-for-jep-269.svg?branch=master)](https://travis-ci.com/mtumilowicz/java11-randomized-iteration-order-for-jep-269)
+
 # java11-randomized-iteration-order-for-jep-269
 
 _Reference_: http://openjdk.java.net/jeps/269  
