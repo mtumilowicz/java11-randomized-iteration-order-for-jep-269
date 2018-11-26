@@ -1,6 +1,6 @@
 # java11-randomized-iteration-order-for-jep-269
 
-_Reference_: java11-randomized-iteration-order-for-jep-269  
+_Reference_: http://openjdk.java.net/jeps/269  
 _Reference_: https://www.youtube.com/watch?v=q6zF3vf114M
 
 # project description
