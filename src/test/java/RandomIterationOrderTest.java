@@ -15,6 +15,15 @@ public class RandomIterationOrderTest {
     }
 
     @Test
+    public void set_jep269_multiple_one_jvm_instance() {
+        Set.of(1, 2, 3, 4, 5).forEach(System.out::println);
+        System.out.println("---");
+        Set.of(1, 2, 3, 4, 5).forEach(System.out::println);
+        System.out.println("---");
+        Set.of(1, 2, 3, 4, 5).forEach(System.out::println);
+    }
+
+    @Test
     public void old_hashSet() {
         new HashSet<>(Arrays.asList(1, 2, 3, 4, 5)).forEach(System.out::println);
     }
